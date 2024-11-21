@@ -1,0 +1,30 @@
+/*
+    What are CSS pseudo-elements?
+
+    Used to style a specific parts of an element or create
+    element dynamically without modifying the underlying HTML
+/*
+
+/*a How are they used? Provide examples. */
+
+/*Inserts content before an element.*/
+.highlight::before {
+    content: "* "; /*useful for adding visual cues*/
+    color: pink;
+}
+
+/*Inserts content after an element*/
+.highlight::after {
+    content: "* ";
+    color: pink;
+    font-weight: bold;
+}
+
+/* Styles the first line of text in a block-level element.*/
+.highlight::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    float: left;
+    margin-right: 5px;
+    color: brown
+}

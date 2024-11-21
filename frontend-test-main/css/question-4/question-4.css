@@ -1,0 +1,30 @@
+/*
+    What are CSS variables ?
+
+    CSS Variable aka CSS custom Properties.
+    Defined to store specific values that can be reused throuhout a stylesheet.
+    It is assigned as global but can be overriden in child element.
+*/
+
+/* How to use them? */
+
+:root {
+    --primary-color: red;
+    --primary-font-size: 16px;
+    --primary-text-color: #000000;
+    --primary-padding: 20px;
+    --secondary-color: pink;
+    --secondary-font-size: 20px;
+    --secondary-text-color: #000000;
+}
+
+.container {
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    padding: var(--primary-padding);
+    font-size: 30px;
+}
+
+p {
+    --text-color: blue;
+}
